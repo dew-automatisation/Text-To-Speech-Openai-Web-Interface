@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text to Speech Converter OpenAI</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text to Speech Converter OpenAI</h1>
+        <input type="text" id="api-key-input" placeholder="Enter OpenAI API Key" />
+        <textarea id="text-input" placeholder="Enter text here..."></textarea>
+        <select id="model-selector">
+            <option value="tts-1">Standard Quality (tts-1)</option>
+            <option value="tts-1-hd">High Quality (tts-1-hd)</option>
+        </select>
+        <select id="voice-selector">
+        <option value="alloy">Alloy</option>
+        <option value="echo">Echo</option>
+        <option value="fable">Fable</option>
+        <option value="onyx">Onyx</option>
+        <option value="nova">Nova</option>
+        <option value="shimmer">Shimmer</option>
+        </select>
+        <select id="format-selector">
+        <option value="mp3">MP3</option>
+        <option value="opus">Opus</option>
+        <option value="aac">AAC</option>
+        <option value="flac">FLAC</option>
+        </select>
+        <button id="convert-btn">Convert to Speech</button>
+        <a id="download-btn" style="display:none;">Download Speech File</a>
+        <audio id="audio-player" controls style="display:none;"></audio>
+        
+		<a href="https://devenirentrepreneurweb.fr">Create by : https://devenirentrepreneurweb.fr</a>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
